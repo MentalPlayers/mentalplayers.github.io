@@ -1,10 +1,10 @@
-.mp {
+.box {
   width: 1000px;
   margin: 0 auto;
   margin-top: 70px;
 }
 
-.mp > p,
+.box > p,
 h1,
 ul {
   margin: 0px;
@@ -16,21 +16,25 @@ h1 {
   font-size: 24px;
 }
 
-.base {
+.greenline {
   background-color: rgb(39, 75, 21);
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 40px;
   color: white;
   border: solid 1px white;
 }
+.header1 {
+  line-height: 40px;
+}
 
-.under {
+.maroonline {
   background-color: rgb(173, 72, 61);
-  line-height: 30px;
   border-left: solid 1px white;
   border-right: solid 1px white;
 }
 
+.header2 {
+  line-height: 30px;
+}
 .content {
   font-size: 21px;
   font-family: "Times New Roman", Times, serif;
@@ -108,4 +112,24 @@ a.ad4:hover {
 a.ad4:active {
   text-decoration: none;
   color: white;
+}
+
+.head {
+  font-weight: bold;
+}
+
+.search1 input[type="text"] {
+  width: 260px;
+}
+.search1 input[type="text"]:focus {
+  background-color: rgb(39, 75, 21);
+  color: white;
+}
+.search1 input[type="button"] {
+  background-color: rgb(39, 75, 21);
+  color: white;
+}
+.search2 {
+  text-align: right;
+  padding-right: 20px;
 }
