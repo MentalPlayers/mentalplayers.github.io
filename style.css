@@ -120,6 +120,7 @@ a.ad4:active {
 
 .search1 input[type="text"] {
   width: 260px;
+  height: 16px;
 }
 .search1 input[type="text"]:focus {
   background-color: rgb(39, 75, 21);
