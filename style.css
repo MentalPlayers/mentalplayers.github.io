@@ -1,139 +1,437 @@
-.box {
-  width: 1000px;
-  margin: 0 auto;
-  margin-top: 70px;
-}
+/* -------------------------------------------------------------- 
+T1016 New Standard/CAF Template 
+-------------------------------------------------------------- */
 
-.box > p,
+/* Reset
+----------------------------------------------------------------------------------------------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
-ul {
-  margin: 0px;
-}
-
-h1 {
-  padding-left: 10px;
-  font-weight: normal;
-  font-size: 24px;
-}
-
-.greenline {
-  background-color: rgb(39, 75, 21);
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  border: solid 1px white;
-}
-.header1 {
-  line-height: 40px;
-}
-
-.maroonline {
-  background-color: rgb(173, 72, 61);
-  border-left: solid 1px white;
-  border-right: solid 1px white;
-}
-
-.header2 {
-  line-height: 30px;
-}
-.content {
-  font-size: 21px;
-  font-family: "Times New Roman", Times, serif;
-  background-color: rgb(249, 249, 214);
-  color: #4562bb;
-  font-weight: bold;
-  list-style-type: none;
-  height: 370px;
-  text-indent: 10px;
-  padding-top: 10px;
-  line-height: 37px;
-  padding-bottom: 10px;
-}
-
-.content > li {
-  background: url("button.jpg") no-repeat;
-  background-position: left;
-  background-size: 15px;
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+:focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.ad2 > li {
+/* Clear Floats
+----------------------------------------------------------------------------------------------------*/
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix {
   display: inline-block;
-  font-family: "Times New Roman", Times, serif;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
 }
 
-.ad2 {
-  text-align: center;
+/* Global  
+----------------------------------------------------------------------------------------------------*/
+body {
+  font-family: arial;
+  background: #fff;
+}
+
+/* Layout 
+----------------------------------------------------------------------------------------------------*/
+.custom_2 {
+}
+.container {
+  width: 800px;
+  margin: 30px auto;
+  background: #fff;
+}
+.header {
+}
+.body {
+  margin-top: 1px;
+}
+#results .body {
+  margin: 20px;
+}
+.col1 {
+  float: left;
+}
+.col2 {
+  float: right;
+}
+.footer {
+}
+.custom_1 {
+  width: 800px;
+}
+
+/* Modules 
+----------------------------------------------------------------------------------------------------*/
+
+.pageHeaderWrap {
+  border-bottom: 30px solid #c44242;
+}
+.pageHeader {
+  height: 32px;
+  line-height: 32px;
+  background: #1b5709;
+  border-bottom: 1px solid #fff;
+}
+.pageHeader h1 {
+  color: #fff;
+  font-size: 18px;
+  font-family: Verdana;
+  font-weight: 400;
+  text-indent: 15px;
+}
+
+.primaryLinksWrap {
+  width: 438px;
+}
+
+/* Lander > Primary Links [Regular RTE] */
+.primaryLinks {
+  float: left;
+  width: 100%;
+  background: #e2dfb8;
+}
+.primaryLinks span.label {
+  display: block;
+  padding: 2px 5px 0;
+  background: #fafad9;
+}
+.primaryLinks span.label,
+.primaryLinks span.label a {
+  color: #676767;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.primaryLinks ul {
+  float: left;
+  width: 100%;
+  margin: 0;
   padding: 0;
 }
-
-.ad1 > img {
-  float: right;
-  width: 464px;
-  height: 388px;
-  border: solid 1px white;
+.primaryLinks li {
+  margin: 0;
+  padding: 0;
 }
-
-a.ad3 {
-  color: #4562bb;
-}
-a.ad3:link {
+.primaryLinks li a,
+.primaryLinks li a:link,
+.primaryLinks li a:visited {
+  display: block;
+  width: 100%;
+  /* width:336px !important;width:331px; */ /* IE6 and non-modern browsers */
+  margin-bottom: 1px;
+  padding: 5px 5px 5px 50px;
+  border: 1px solid #fff;
+  border-width: 1px 0 0;
+  /* background:#f6f6f6 url(/0007.gif) no-repeat 25px 50%; */
+  background: #fafad9 url("./arrow.gif") no-repeat 25px 50%;
+  color: #476ec7;
+  font: bold 14px arial;
   text-decoration: none;
-  color: #4562bb;
 }
-a.ad3:visited {
-  text-decoration: none;
-  color: #4562bb;
+.primaryLinks li a:hover {
+  background: #fbfbf5 url("./arrow.gif") no-repeat 30px 50%;
+  color: #c03625;
 }
-a.ad3:hover {
-  text-decoration: underline;
-  color: white;
-}
-a.ad3:active {
-  text-decoration: none;
-  color: #4562bb;
-}
-
-a.ad4 {
-  color: white;
-}
-a.ad4:link {
-  text-decoration: none;
-  color: white;
-}
-a.ad4:visited {
-  text-decoration: none;
-  color: white;
-}
-a.ad4:hover {
-  text-decoration: underline;
-  color: #4562bb;
-}
-a.ad4:active {
-  text-decoration: none;
-  color: white;
+.primaryLinks li.first a {
+  border-width: 0 0 1px 0;
 }
 
-.head {
+/* Lander > Template Image */
+.imageBoxWrap {
+}
+.imageBox {
+}
+.imageBox img {
+  width: 360px;
+  height: 321px; /* originally 318px, stretched to fit new dimensions */
+}
+
+/* Global > Search Box */
+.searchBoxWrap {
+  height: 32px;
+  position: relative;
+  background: #c44242;
+}
+.searchBox {
+  position: relative;
+  left: 450px;
+  top: 5px;
+}
+.searchBox input {
+  vertical-align: middle;
+}
+.searchBox .sb_text {
+  width: 255px;
+  height: 18px;
+  border: 1px inset #999;
+  padding-left: 3px;
+  color: #000;
+  font-size: 16px;
+}
+.searchBox .sb_button {
+  width: 60px;
+  height: 22px;
+  background: transparent url("./button.gif") no-repeat;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Global > Footer Links */
+
+.footerLinksWrap {
+  margin-top: 1px;
+  position: relative;
+  background: #1b5709; /* set background property to transparent in CAF */
+}
+.footerLinks {
+  float: left; /* needs to be cancelled out when CAF is rendered */
+  padding: 10px 12px;
+  font-size: 11px;
+  font-family: verdana;
+  background: #1b5709;
+}
+.caf .footerLinks {
+  float: none;
+  padding: 4px 12px;
+} /* CAF adjustment */
+.footerLinks span.label {
+  margin-left: 10px;
+}
+.footerLinks span.label,
+.footerLinks span.label a {
+  float: left;
+  padding-right: 7px;
+  color: #fff;
+  font-family: verdana;
   font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footerLinks ul {
+  float: left;
+}
+.footerLinks li {
+  float: left;
+}
+.footerLinks li a,
+.footerLinks li a:link,
+.footerLinks li a:visited {
+  padding: 0 7px;
+  border-left: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase; /* not supported by CAF */
+}
+.footerLinks li a:hover {
+  color: #ff9;
+  text-decoration: underline;
+}
+.footerLinks li.first a {
+  padding: 0 7px 0 0;
+  border-left: 0;
 }
 
-.search1 input[type="text"] {
-  width: 260px;
+/* Status Feedback */
+.status p {
+  margin: 15px;
+  padding: 5px 5px 5px 30px;
+  border: 1px solid #84aec1;
+  border-width: 1px 0;
+  background: #dff4ff url("./icon_info_1.gif") no-repeat 8px center;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Result > Ads */
+
+.adsWrap {
+}
+
+.ads {
+  width: 550px;
+  margin: 0;
+}
+
+.sr {
+}
+.wr {
+  padding: 15px 0;
+}
+
+.ads h2 {
+  margin: 0;
+  color: #aaa;
+  font-size: 14px;
+  font-weight: normal;
+}
+.ads ul {
+  margin: 0 0 25px;
+}
+.ads li {
+  margin-top: 16px;
+  padding-left: 25px;
+  background: transparent url("./arrow.gif") no-repeat 0 3px;
+}
+
+.title {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #0000cc;
+}
+.abstract {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #000;
+}
+.url {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #339933;
+  font-size: 13px;
+  text-decoration: none;
+}
+.url .icon {
+  position: relative;
+  top: 3px;
+  width: 16px;
   height: 16px;
+  padding-right: 3px;
 }
-.search1 input[type="text"]:focus {
-  background-color: rgb(39, 75, 21);
-  color: white;
+
+/* Custom Content */
+.custom_1,
+.custom_2 {
+  text-align: center;
+  margin: 10px auto;
+  color: #666;
+  font-family: verdana;
+  font-size: 11px;
+  font-weight: normal;
 }
-.search1 input[type="button"] {
-  background-color: rgb(39, 75, 21);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
+
+/* Renewal Instructions */
+.custom_1 {
 }
-.search2 {
-  text-align: right;
-  padding-right: 20px;
+.renewalText {
+}
+.renewalText p {
+  margin: 10px 0;
+  padding: 0;
+}
+.renewalText a {
 }
